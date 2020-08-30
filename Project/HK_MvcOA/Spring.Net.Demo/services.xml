@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--要在属性中选择始终复制(生成解决方案时自动将文件复制到Debug文件夹下) 要不然一清理解决方案就会将Debug中文件删除 就检测不到services.xml文件了 报错-->
+<objects xmlns="http://www.springframework.net">
+	<description>An  example that demonstrates simple IoC features.</description>
+	<object name="UserInfo" type="Spring.Net.Demo.UserInfo,Spring.Net.Demo">
+		<property name="str" value="zhangsan"/>
+		<property name="Person" ref="Person"/><!-- 对于不是单纯字符类型的字段不能用value为其赋值 ref可以关联另一个object-->
+	</object>
+	<object name="Person"  type="Spring.Net.Demo.Person, Spring.Net.Demo">
+		<property name="Age" value="16"/>
+	</object>
+</objects>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12A613C7-DEE8-4A14-B8AC-4D2C4055BA9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CaterUI</RootNamespace>
+    <AssemblyName>CaterUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=028265cbccdfa80d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.DDF, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.DDF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HPSF, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.HPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.HSSF, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.HSSF.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.POIFS, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.POIFS.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Util, Version=1.2.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaterMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaterMain.Designer.cs">
+      <DependentUpon>CaterMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaterUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaterUI.Designer.cs">
+      <DependentUpon>CaterUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDishInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDishInfo.Designer.cs">
+      <DependentUpon>FormDishInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDishTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDishTypeInfo.Designer.cs">
+      <DependentUpon>FormDishTypeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHallInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHallInfo.Designer.cs">
+      <DependentUpon>FormHallInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemberInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemberInfo.Designer.cs">
+      <DependentUpon>FormMemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMemberTypeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMemberTypeInfo.Designer.cs">
+      <DependentUpon>FormMemberTypeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDish.Designer.cs">
+      <DependentUpon>FormOrderDish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderPay.Designer.cs">
+      <DependentUpon>FormOrderPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRemove.Designer.cs">
+      <DependentUpon>FormRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTableInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTableInfo.Designer.cs">
+      <DependentUpon>FormTableInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOPITest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOPITest.Designer.cs">
+      <DependentUpon>NOPITest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CaterMain.resx">
+      <DependentUpon>CaterMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaterUI.resx">
+      <DependentUpon>CaterUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDishInfo.resx">
+      <DependentUpon>FormDishInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDishTypeInfo.resx">
+      <DependentUpon>FormDishTypeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHallInfo.resx">
+      <DependentUpon>FormHallInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemberInfo.resx">
+      <DependentUpon>FormMemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMemberTypeInfo.resx">
+      <DependentUpon>FormMemberTypeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDish.resx">
+      <DependentUpon>FormOrderDish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderPay.resx">
+      <DependentUpon>FormOrderPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRemove.resx">
+      <DependentUpon>FormRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTableInfo.resx">
+      <DependentUpon>FormTableInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOPITest.resx">
+      <DependentUpon>NOPITest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CaterBll\CaterBll.csproj">
+      <Project>{8f4239f0-9317-4de6-81ee-5e951d678173}</Project>
+      <Name>CaterBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CaterComman\CaterComman.csproj">
+      <Project>{17affa00-34e5-45e0-b81c-d3f2619141f7}</Project>
+      <Name>CaterComman</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CaterModel\CaterModel.csproj">
+      <Project>{dcc31b39-e3cc-424c-95f6-6dbbc340867f}</Project>
+      <Name>CaterModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\desk1.png" />
+    <Content Include="images\desk2.png" />
+    <Content Include="images\loginBg.png" />
+    <Content Include="images\logo.ico" />
+    <Content Include="images\menuBg.BMP" />
+    <Content Include="images\menuDish.png" />
+    <Content Include="images\menuManager.png" />
+    <Content Include="images\menuMember.png" />
+    <Content Include="images\menuOrder.png" />
+    <Content Include="images\menuQuit.png" />
+    <Content Include="images\menuTable.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

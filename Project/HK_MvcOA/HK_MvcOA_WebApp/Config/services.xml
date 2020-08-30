@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object type="HK_MvcOA_Bll.UserInfoService, HK_MvcOA_Bll" singleton="false" name="UserInfoService">
+	</object>
+	<object type="HK_MvcOA_Bll.RoleInfoService, HK_MvcOA_Bll" singleton="false" name="RoleInfoService">
+	</object>
+	<object type="HK_MvcOA_Bll.ActionInfoService, HK_MvcOA_Bll" singleton="false" name="ActionInfoService">
+	</object>
+	<object type="HK_MvcOA_Bll.R_UserInfo_ActionInfoService, HK_MvcOA_Bll" singleton="false" name="R_UserInfo_ActionInfoService">
+	</object>
+</objects>

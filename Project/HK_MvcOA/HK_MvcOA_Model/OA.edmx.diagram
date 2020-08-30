@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9e61fd5c48c445e4a4174dc5a8b87924" Name="Diagram1" ZoomLevel="47" >
+        <EntityTypeShape EntityType="OA.ActionInfo" Width="1.5" PointX="8.75" PointY="12.875" />
+        <EntityTypeShape EntityType="OA.Books" Width="1.5" PointX="0.57412242543609926" PointY="29.64339604864055" />
+        <EntityTypeShape EntityType="OA.Department" Width="1.5" PointX="5.625" PointY="9.25" />
+        <EntityTypeShape EntityType="OA.KeyWordsRank" Width="1.5" PointX="12" PointY="12.625" />
+        <EntityTypeShape EntityType="OA.R_UserInfo_ActionInfo" Width="1.5" PointX="5.625" PointY="12.875" />
+        <EntityTypeShape EntityType="OA.RoleInfo" Width="1.5" PointX="2.875" PointY="16.75" />
+        <EntityTypeShape EntityType="OA.SearchDetails" Width="1.5" PointX="11.875" PointY="10" />
+        <EntityTypeShape EntityType="OA.UserInfo" Width="1.5" PointX="2.5" PointY="12.125" />
+        <AssociationConnector Association="OA.FK_ActionInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="OA.FK_UserInfoR_UserInfo_ActionInfo" />
+        <AssociationConnector Association="OA.DepartmentActionInfo" />
+        <AssociationConnector Association="OA.RoleInfoActionInfo" />
+        <AssociationConnector Association="OA.UserInfoDepartment" />
+        <AssociationConnector Association="OA.UserInfoRoleInfo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
